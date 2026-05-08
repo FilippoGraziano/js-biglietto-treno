@@ -2,7 +2,7 @@ const age = prompt(`Quanti anni hai?`);
 const km = prompt(`Quanti km devi percorrere?`);
 
 const priceForKm = 0.21;
-const importo = km * priceForKm;
+const importo = parseInt(km) * priceForKm;
 const totalPrice = importo.toLocaleString('it-IT', {
     style: 'currency',
     currency: 'EUR',
